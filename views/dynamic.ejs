@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs'); %>
+
+    <title>
+        <%= title%>   
+    </title>
+</head>
+<body>
+    <!-- For The things that we wanted to diplay  we need to  add = after the % , and for the things we wants to render we need to add - after the % . -->
+    <%- include('../partials/nav.ejs'); %>
+    <a href="/random">Random</a>
+
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <!-- Without routing; just by using static middleware -->
+    <a href="/contact.html">Contact</a> 
+
+    <h1>Welcome to the Dynamic Page </h1>
+</body>
+</html>
